@@ -260,6 +260,7 @@ ul{
 .menu-icon{
     width: 28px;
     margin-left: 20px;
+    display: none ;
 }
 /* media query*/
 @media only screen and (max-width: 800px){
@@ -269,6 +270,8 @@ ul{
         left: 0;
         background: #333333;
         width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
         
     }
     nav ul li{
@@ -280,5 +283,86 @@ ul{
     .menu-icon{
         display: block;
         cursor: pointer;
+    }
+}
+
+/*todos os produtos*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #E5621F;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 0  auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid orangered;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: orangered;
+    color: white;
+}
+
+.singleproduct{
+    margin-top: 80px;
+}
+.singleproduct .col-2 img{
+    padding: 0;
+
+}
+.singleproduct .col-2{
+    padding: 20px;
+
+}
+.singleproduct h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.singleproduct select{
+    margin-top: 20px;
+    display: block;
+    padding: 10px;
+}
+.singleproduct input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px ;
+    border: 1px solid orangered;
+}
+
+input:focus{
+    outline: none;
+
+}
+.singleproduct .fa{
+    color: orangered;
+    margin-left: 10px ;
+}
+
+/*media query for less than 600 screen size ---*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100% ;
     }
 }
